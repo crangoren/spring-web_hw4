@@ -22,8 +22,8 @@ public class ProductController {
     }
 
     @GetMapping("/products/change_cost")
-    public void changeCost(@RequestParam Long productId, @RequestParam Integer delta){
-        productService.changeCost(productId, delta);
+    public void changePrice(@RequestParam Long productId, @RequestParam int delta){
+        productService.changePrice(productId, delta);
     }
 
 }

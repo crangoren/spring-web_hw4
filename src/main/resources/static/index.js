@@ -9,7 +9,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     };
 
 
-    $scope.changeCost = function (productId, delta) {
+    $scope.changePrice = function (productId, delta) {
         $http({
             url: contextPath + '/products/change_cost',
             method: 'GET',
