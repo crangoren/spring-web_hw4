@@ -67,10 +67,7 @@ public class ProductDao implements IProductDao {
 
     }
 
-    /*
-     * в следующем методе не смог побороть регистр у title. если у нового продукта в тайтле регистр отличается от того что в бд,
-     * метод его просто игнорирует
-     */
+
     @Override
     public Product saveOrUpdate(Product product) {
         try (Session session = SessionFactoryUtils.getSession()) {
