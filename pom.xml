@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>RKSuleimanov</groupId>
-	<artifactId>spring-web_hw4</artifactId>
+	<artifactId>spring-web_hw7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-web_hw4</name>
+	<name>spring-web_hw7</name>
 	<description>HW4-19.11.21</description>
 	<properties>
 		<java.version>11</java.version>
@@ -25,31 +25,28 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-
-			<groupId>org.hibernate</groupId>
-
-			<artifactId>hibernate-core</artifactId>
-
-			<version>5.4.4.Final</version>
-
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
 		</dependency>
-
-
 		<dependency>
-
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.4.Final</version>
+		</dependency>
+		<dependency>
 			<groupId>com.h2database</groupId>
-
 			<artifactId>h2</artifactId>
-
-			<version>1.4.200</version>
-
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 

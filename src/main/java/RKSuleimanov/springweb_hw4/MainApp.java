@@ -1,7 +1,5 @@
 package RKSuleimanov.springweb_hw4;
 
-import RKSuleimanov.springweb_hw4.data.Product;
-import RKSuleimanov.springweb_hw4.repositories.ProductDao;
 import RKSuleimanov.springweb_hw4.utils.SessionFactoryUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

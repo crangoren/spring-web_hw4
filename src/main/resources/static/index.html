@@ -31,6 +31,9 @@
                 {{p.price}}
                 <button class="btn btn-primary" ng-click="changePrice(p.id, 1)">+</button>
             </td>
+            <td>
+                <button class="btn btn-danger" ng-click="deleteById(p.id)">Удалить</button>
+            </td>
         </tr>
         </tbody>
     </table>

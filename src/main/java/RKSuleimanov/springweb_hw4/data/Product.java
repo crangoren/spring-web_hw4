@@ -1,6 +1,7 @@
 package RKSuleimanov.springweb_hw4.data;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 
 @Entity
 @Table(name = "products")
@@ -15,9 +16,9 @@ public class Product {
     private String title;
 
     @Column(name = "price")
-    private int price;
+    private Integer price;
 
-    public Product(String title, int price) {
+    public Product(String title, Integer price) {
         this.title = title;
         this.price = price;
     }
@@ -54,13 +55,5 @@ public class Product {
         System.out.println(id + " " + title + " " + price);
     }
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", price=" + price +
-                '}';
-    }
 }
 
